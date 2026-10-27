@@ -83,7 +83,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body.dark-canvas {
@@ -96,7 +96,7 @@ body.dark-canvas {
   color: var(--text-body);
   font-family: var(--font-body);
   line-height: 1.65;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   min-height: 100vh;
 }
@@ -7846,6 +7846,7 @@ img {
   padding: 100px 0;
   position: relative;
   background: var(--canvas);
+  overflow: visible;
 }
 
 .editorial-split-grid {
@@ -7856,8 +7857,12 @@ img {
 }
 
 .editorial-sticky-col {
+  position: -webkit-sticky;
   position: sticky;
   top: 110px;
+  align-self: start;
+  height: fit-content;
+  z-index: 5;
 }
 
 .editorial-main-title {
