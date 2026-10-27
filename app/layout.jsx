@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import UraanBot from "../components/UraanBot";
 import ClientEffects from "../components/ClientEffects";
+import ConsultationDrawer from "../components/ConsultationDrawer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -108,6 +109,9 @@ export default function RootLayout({ children }) {
 
         {/* Expanded Site Footer */}
         <Footer />
+
+        {/* Slide-out Consultation Drawer (Cart-like side form) */}
+        <ConsultationDrawer />
 
         {/* Floating WhatsApp (Pinned Bottom-Left) */}
         <FloatingWhatsApp />
