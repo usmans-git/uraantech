@@ -40,7 +40,7 @@ export const metadata = {
     canonical: "https://uraantech.online",
   },
   verification: {
-    google: "PeGMytQARHfcoh0empip-BQ0wbcrH5D6Kg",
+    google: "PeGMytQARHfcoh0empip-BQ0wbcrH5D6KgrpPXfco_k",
   },
   robots: isProduction
     ? {
