@@ -8016,27 +8016,16 @@ img {
 }
 
 .open-sector-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
+  display: block;
   text-decoration: none;
-  padding: 16px;
-  border-radius: 12px;
-  transition: background 0.2s ease, transform 0.2s ease;
+  padding: 24px 0 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
 }
 
 .open-sector-item:hover {
-  background: rgba(225, 29, 72, 0.04);
+  border-top-color: #E11D48;
   transform: translateY(-2px);
-}
-
-.sector-icon-wrap {
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 10px;
 }
 
 .sector-content {
