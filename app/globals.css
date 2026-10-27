@@ -13,8 +13,8 @@
   --surface-card: rgba(12, 18, 36, 0.75);
   
   /* Specular Highlight (Optical Glass Bevel) */
-  --card-highlight: inset 0 1px 1px 0 rgba(255, 255, 255, 0.16), inset 0 0 15px 0 rgba(56, 189, 248, 0.02);
-  --card-highlight-strong: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.28), inset 0 0 20px 0 rgba(56, 189, 248, 0.04);
+  --card-highlight: inset 0 1px 1px 0 rgba(255, 255, 255, 0.08);
+  --card-highlight-strong: inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
 
   /* Brand Accents - Minimal Monochrome with Sharp Cyan Hits */
   --cyan-sonic: #38BDF8;
@@ -33,12 +33,12 @@
   --text-dim: #64748B;
 
   /* Borders & Precision Glows */
-  --border-subtle: rgba(255, 255, 255, 0.10);
-  --border-hover: rgba(56, 189, 248, 0.50);
-  --border-cyan: rgba(56, 189, 248, 0.40);
-  --glow-primary: 0 16px 36px -5px rgba(2, 132, 199, 0.35), 0 0 20px rgba(56, 189, 248, 0.20);
-  --glow-cyan: 0 16px 35px -5px rgba(56, 189, 248, 0.35), 0 0 20px rgba(56, 189, 248, 0.20);
-  --glow-crystal: 0 20px 45px -10px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 0 25px rgba(56, 189, 248, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(56, 189, 248, 0.28);
+  --border-cyan: rgba(56, 189, 248, 0.22);
+  --glow-primary: 0 12px 28px -6px rgba(0, 0, 0, 0.45);
+  --glow-cyan: 0 8px 24px -4px rgba(56, 189, 248, 0.12);
+  --glow-crystal: 0 14px 32px -8px rgba(0, 0, 0, 0.5);
 
   /* Gradients - Calibrated Minimal Cyan Kinetic */
   --grad-kinetic: linear-gradient(135deg, #0284C7 0%, #0EA5E9 45%, #38BDF8 100%);
@@ -4743,10 +4743,10 @@ body.chatbot-is-open .floating-whatsapp {
    15. LIGHT SECTION SYSTEM (LUXURY IVORY / WARM LINEN PALETTE)
    ========================================================================== */
 .section-light {
-  background: linear-gradient(180deg, #F5F1EA 0%, #FAF8F5 30%, #FDFCF9 70%, #F5F1EA 100%) !important;
-  color: #1C1917 !important;
-  border-top: 1px solid #E8E2D8;
-  border-bottom: 1px solid #E8E2D8;
+  background: #080D1F !important;
+  color: var(--text-body) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -7717,3 +7717,121 @@ img {
   content-visibility: visible;
 }
 
+
+
+/* ==========================================================================
+   Clean & Calm Hero Architectural System Window
+   ========================================================================== */
+.hero-system-mockup {
+  background: rgba(11, 16, 33, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px -15px rgba(0, 0, 0, 0.75), 0 0 1px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-system-mockup:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 28px 70px -12px rgba(0, 0, 0, 0.8), 0 0 25px rgba(56, 189, 248, 0.08);
+}
+
+.hero-system-mockup .mockup-header {
+  background: rgba(15, 23, 42, 0.92);
+  padding: 12px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-system-mockup .mockup-body {
+  padding: 0;
+  background: transparent;
+}
+
+.hero-system-mockup .terminal-code {
+  padding: 22px 24px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  line-height: 1.72;
+  color: #E2E8F0;
+  background: rgba(7, 11, 24, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-x: auto;
+}
+
+.system-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(11, 16, 33, 0.95);
+}
+
+.metric-mini-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.metric-mini-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-mini-value {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Calm Bento Grid Styling (No eye glare) */
+.bento-card {
+  background: rgba(12, 18, 36, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.5) !important;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease !important;
+}
+
+.bento-card:hover {
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  background: rgba(16, 24, 48, 0.8) !important;
+  transform: translateY(-3px) !important;
+}
+
+.bento-glow {
+  opacity: 0.15 !important; /* Tone down blinding radial aura */
+}
+
+.tag-pill {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94A3B8 !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  letter-spacing: 0.01em !important;
+  box-shadow: none !important;
+}
+
+.tag-pill:hover {
+  background: rgba(56, 189, 248, 0.08) !important;
+  border-color: rgba(56, 189, 248, 0.25) !important;
+  color: #E0F2FE !important;
+}
+
+@media (max-width: 991px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
