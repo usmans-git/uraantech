@@ -8094,3 +8094,163 @@ img {
     padding: 32px 0;
   }
 }
+
+
+/* ==========================================================================
+   Modern Studio Manifesto & Principles Architecture
+   ========================================================================== */
+.studio-manifesto-section {
+  padding: 110px 0 90px;
+  position: relative;
+  background: var(--canvas);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.manifesto-statement-block {
+  max-width: 860px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.manifesto-headline {
+  font-size: clamp(2.1rem, 3.6vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  margin: 18px 0 24px;
+}
+
+.manifesto-narrative {
+  font-size: 1.12rem;
+  line-height: 1.72;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.manifesto-stand {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #CBD5E1;
+}
+
+.manifesto-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  margin-bottom: 64px;
+}
+
+.principle-item {
+  border-top: 2px solid rgba(255, 255, 255, 0.09);
+  padding-top: 24px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.principle-item:hover {
+  border-top-color: #E11D48;
+  transform: translateY(-3px);
+}
+
+.principle-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #E11D48;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.principle-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.principle-desc {
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: var(--text-muted);
+  margin: 0 0 16px 0;
+}
+
+.principle-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #FB7185;
+  letter-spacing: 0.02em;
+}
+
+/* Proof Metrics Ribbon */
+.manifesto-metrics-ribbon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 36px 28px;
+  background: rgba(18, 19, 26, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ribbon-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.ribbon-num {
+  font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.ribbon-lbl {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ribbon-divider {
+  width: 1px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 991px) {
+  .manifesto-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 28px;
+  }
+  .manifesto-metrics-ribbon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 28px 20px;
+  }
+  .ribbon-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .manifesto-principles-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .manifesto-metrics-ribbon {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
