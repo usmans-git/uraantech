@@ -115,13 +115,13 @@ export default function Footer() {
                   href="https://wa.me/923170128047?text=Hello%20UraanTech%20Team%2C%20I%20would%20like%20to%20discuss%20a%20project."
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "var(--cyan-sonic)" }}
+                  style={{ color: "#FB7185", fontWeight: 600 }}
                 >
                   WhatsApp Chat &rarr;
                 </a>
               </li>
               <li>
-                <Link href="/contact">Book an Audit &rarr;</Link>
+                <Link href="#contact" className="open-consultation-drawer-btn">Book an Audit &rarr;</Link>
               </li>
             </ul>
           </div>

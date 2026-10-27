@@ -654,7 +654,7 @@ export default function Header() {
                 <span className="nav-cyber-text">AI &amp; Cyber Studio</span>
               </div>
 
-              <Link href="/contact" className="btn btn-shimmer nav-cta">
+              <Link href="/contact" className="btn btn-shimmer nav-cta open-consultation-drawer-btn">
                 <span>Book a Call</span>
                 <span className="btn-arrow" aria-hidden="true">&rarr;</span>
               </Link>
@@ -742,7 +742,7 @@ export default function Header() {
               <div className="mobile-acc-panel">
                 <Link
                   href="/services"
-                  className="mobile-sublink font-bold text-cyan"
+                  className="mobile-sublink font-bold"
                   onClick={() => setMobileOpen(false)}
                 >
                   All Services Overview &rarr;
@@ -817,7 +817,7 @@ export default function Header() {
         <div className="mobile-drawer-footer">
           <Link
             href="/contact"
-            className="btn btn-shimmer full-width"
+            className="btn btn-shimmer full-width open-consultation-drawer-btn"
             onClick={() => setMobileOpen(false)}
           >
             Book a Call &rarr;
